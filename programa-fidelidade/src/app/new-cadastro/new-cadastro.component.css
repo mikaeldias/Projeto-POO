@@ -1,0 +1,27 @@
+.cadastro {
+    display: flex;
+    justify-content: center;  /* Alinha horizontalmente */
+    align-items: center;      /* Alinha verticalmente */
+    height: 70vh;            /* Ocupa toda a altura da tela */
+  }
+
+  form {
+    width: 100%;
+    max-width: 400px; /* Define uma largura máxima para o formulário */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+.texto {
+    display: flex;
+    justify-content: center;  /* Alinha horizontalmente */
+    align-items: center; 
+    font-size:30px;
+}
+
+button{
+    margin-top: 20px;
+    align-items: center;
+}
