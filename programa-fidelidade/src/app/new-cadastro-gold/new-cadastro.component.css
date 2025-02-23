@@ -1,13 +1,13 @@
 .cadastro {
     display: flex;
-    justify-content: center;  /* Alinha horizontalmente */
-    align-items: center;      /* Alinha verticalmente */
-    height: 70vh;            /* Ocupa toda a altura da tela */
+    justify-content: center;  
+    align-items: center;      
+    height: 70vh;            
   }
 
   form {
     width: 100%;
-    max-width: 400px; /* Define uma largura máxima para o formulário */
+    max-width: 400px; 
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -16,9 +16,10 @@
 
 .texto {
     display: flex;
-    justify-content: center;  /* Alinha horizontalmente */
+    justify-content: center;  
     align-items: center; 
     font-size:30px;
+    color: gold;
 }
 
 button{

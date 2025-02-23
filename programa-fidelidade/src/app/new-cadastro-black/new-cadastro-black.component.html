@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário Centralizado</title>
+</head>
+<body>
+    <div class="texto">Cadastre-se no Plano Platinum</div>
+    <hr>
+  <div class="cadastro">
+    <form #form="ngForm" (ngSubmit)="adcionarPessoa()" novalidate> 
+      <div class="form-group">
+        <label class="dado" for="exampleInputEmail1">Id</label>
+        <input type="text" class="form-control" id="id" value="1" readonly name="id" [(ngModel)]="id" required>
+      </div>
+      <div class="form-group">
+        <label class="dado" for="exampleInputEmail1">Nome Completo</label>
+        <input type="text" class="form-control" id="name" placeholder="Digite seu Nome" name="nome" [(ngModel)]="nome" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">CPF</label>
+        <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF" name="cpf" [(ngModel)]="cpf" required>
+      </div>
+      <div class="form-group">
+        <label class="dado" for="exampleInputEmail1">Idade</label>
+        <input type="number" class="form-control" id="age" placeholder="Digite a sua Idade" name="idade" [(ngModel)]="idade" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Estado de Nascimento</label>
+        <input type="text" class="form-control" id="nasc" placeholder="Digite o Estado em que Nasceu(UF)" name="estado_nascimento" [(ngModel)]="estado_nascimento" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Digite o seu Email" name="email" [(ngModel)]="email" required>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="!form.valid">Cadastrar</button> 
+    </form>
+  </div>
+</body>
+</html>

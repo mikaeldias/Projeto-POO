@@ -1,1 +1,21 @@
-<p>boas-vindas-cliente works!</p>
+<div>
+    <h1>Parabéns {{ pessoa?.nome }}, você acaba de assinar o plano {{ pessoa?.categoria }}</h1>
+</div>
+<div>
+    <h2>Veja os seus benefícios abaixo: </h2>
+</div>
+<hr>
+<ul>
+    <li>Remarcação de voos com até 5 horas de antecedência;</li>
+    <li>Marcação de assento gratuito;</li>
+    <li>Acesso a sala VIP Mastercard Black (Terminal 3) do Aeroporto de Guarulhos;</li>
+
+    <li>
+        <span *ngIf="pessoa?.categoria !== 'Gold'">5 pontos a dólar gasto com passagens aéreas;</span>
+        <span *ngIf="pessoa?.categoria === 'Gold'" class="line-through"> </span>
+    </li>
+    <li>
+        <span *ngIf="pessoa?.categoria == 'Black'">Desconto de 10% em reservas de carro com a Localiza.</span>
+        <span  *ngIf="pessoa?.categoria === 'Gold'" class="line-through"></span>
+    </li>
+</ul>

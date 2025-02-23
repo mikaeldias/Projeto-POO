@@ -1,0 +1,14 @@
+.card-container {
+    display: flex;
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    gap: 20px; /* Espaçamento entre os cards */
+    margin-top: 50px;
+}
+.texto {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.line-through {
+    text-decoration: line-through;
+  }

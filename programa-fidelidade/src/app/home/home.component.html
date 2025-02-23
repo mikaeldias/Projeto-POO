@@ -1,1 +1,54 @@
-<p>Seja bem vindo {{ nome }}</p>
+<div class="texto">
+    <h1><b></b>Seja bem vindo (a)</h1>
+</div>
+<div class="texto">
+    <h2>Um mundo de possibilidades espera por você no Clube <b>Sorrisos</b></h2>
+</div>
+<hr>
+<div class="texto">
+    <h3>Conheça nossos planos e benefícios: </h3>
+</div>
+<div id ="card-t" class="card-container">
+    <div class="card" style="width: 18rem;">
+        <img src="https://img.freepik.com/fotos-gratis/vazio-salvar-textura-sala-luz_1258-175.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">Plano Gold</h5>
+            <ul class="card-text">
+                <li>Remarcação de Voos com até 5 horas de antecedencia;</li>
+                <li>Marcação de assento gratuito;</li>
+                <li>Acesso a sala VIP Mastercard Black (Terminal 3) do Aeroporto de Guarulhos;</li>
+                <li><span class="line-through">5 pontos a dolár gasto com passagens aéreas;</span></li>
+                <li><span class="line-through">Desconto de 10% em reservas de carro com a Localiza.</span></li>
+            </ul>
+        <a href="#" class="btn btn-primary" [routerLink]="['/Gold']">Assine agora</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://media.istockphoto.com/id/679479658/photo/silver-foil-texture-background.jpg?s=612x612&w=0&k=20&c=8M_Mo9Ig_OFsr4wTFtfZq8KziQYewrQEtuMCk250N7A=" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">Plano Platinum</h5>
+        <ul class="card-text">
+            <li>Remarcação de Voos com até 5 horas de antecedencia;</li>
+            <li>Marcação de assento gratuito;</li>
+            <li>Acesso a sala VIP Mastercard Black (Terminal 3) do Aeroporto de Guarulhos;</li>
+            <li>5 pontos a dolár gasto com passagens aéreas;</li>
+            <li><span class="line-through">Desconto de 10% em reservas de carro com a Localiza.</span></li>
+        </ul>
+        <a href="#" class="btn btn-primary" [routerLink]="['/Platinum']">Assine agora</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://img.freepik.com/free-photo/black-smooth-textured-paper_53876-96064.jpg?semt=ais_hybrid" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">Plano Black</h5>
+        <ul class="card-text">
+            <li>Remarcação de Voos com até 5 horas de antecedencia;</li>
+            <li>Marcação de assento gratuito;</li>
+            <li>Acesso a sala VIP Mastercard Black (Terminal 3) do Aeroporto de Guarulhos;</li>
+            <li>5 pontos a dolár gasto com passagens aéreas;</li>
+            <li>Desconto de 10% em reservas de carro com a Localiza.</li>
+        </ul>
+        <a href="#" class="btn btn-primary" [routerLink]="['/Black']">Assine agora</a>
+        </div>
+    </div>
+</div>
